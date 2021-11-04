@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  adminhub-backend:
+    build: .
+    container_name: "adminhub-backend"
+    restart: unless-stopped
+    ports:
+      - 45000:4600
