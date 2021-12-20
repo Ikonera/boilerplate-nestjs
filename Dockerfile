@@ -4,8 +4,8 @@ LABEL maintainer="Gabriel MILLET" contact="gabrielmlt@protonmail.ch"
 
 ENV NODE_ENV=production
 
-COPY . /adminhub-backend
-WORKDIR /adminhub-backend
+COPY . /backend
+WORKDIR /backend
 
 RUN npm i --production --silent
 RUN npm run build
